@@ -1,0 +1,201 @@
+:root {
+    --primary-gold: #b38b2d;
+    --light-gold: #f4e6b5;
+    --dark-gold: #85641b;
+    --bg-light: #fdfdfd;
+    --text-dark: #2c2c2c;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 20px;
+    background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9));
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border: 1px solid rgba(179, 139, 45, 0.2);
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--primary-gold);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-img {
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    object-fit: contain;
+}
+
+.header-text h1 {
+    margin: 0;
+    color: var(--dark-gold);
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-text p {
+    margin: 5px 0 0;
+    color: var(--primary-gold);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#date-display {
+    font-size: 0.9em;
+    background: var(--light-gold);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: var(--dark-gold);
+    white-space: nowrap;
+}
+
+/* Margin Selector */
+.margin-selector {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 10px 30px;
+    border: 2px solid var(--primary-gold);
+    background: var(--white);
+    color: var(--dark-gold);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background: var(--light-gold);
+}
+
+.tab-btn.active {
+    background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+    color: white;
+    border-color: var(--dark-gold);
+    box-shadow: 0 4px 12px rgba(133, 100, 27, 0.4);
+}
+
+/* Table */
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid var(--light-gold);
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+th {
+    background: linear-gradient(to bottom, #fcf8e8, #f4e6b5);
+    color: var(--dark-gold);
+    padding: 16px 12px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--primary-gold);
+    white-space: nowrap;
+}
+
+td {
+    padding: 13px 12px;
+    text-align: right;
+    border-bottom: 1px solid rgba(179, 139, 45, 0.1);
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(244, 230, 181, 0.12);
+}
+
+tr:hover {
+    background-color: rgba(179, 139, 45, 0.06);
+}
+
+td:first-child,
+th:first-child {
+    text-align: left;
+    font-weight: bold;
+    position: sticky;
+    left: 0;
+    background: #fff;
+    z-index: 2;
+    padding-left: 20px;
+    color: var(--dark-gold);
+    border-right: 2px solid var(--light-gold);
+}
+
+tr:nth-child(even) td:first-child {
+    background-color: #fdf9f0;
+}
+
+.val-pinjaman {
+    color: #c62828;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer-info {
+    margin-top: 25px;
+    text-align: center;
+    background: var(--dark-gold);
+    color: white;
+    padding: 15px;
+    border-radius: 0 0 16px 16px;
+    margin: 20px -30px -30px -30px;
+    line-height: 1.6;
+}
+
+.footer-info small {
+    opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    .container { padding: 15px; }
+    .header { flex-direction: column; align-items: flex-start; }
+    .banner-img { height: 60px; }
+    .header-text h1 { font-size: 18px; }
+    .tab-btn { padding: 8px 18px; font-size: 13px; }
+    .footer-info { margin: 20px -15px -15px -15px; }
+}
