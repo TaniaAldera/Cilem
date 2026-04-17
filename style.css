@@ -121,14 +121,14 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 900px;
+    min-width: 1000px;
 }
 
 th {
     background: linear-gradient(to bottom, #fcf8e8, #f4e6b5);
     color: var(--dark-gold);
-    padding: 16px 12px;
-    font-size: 13px;
+    padding: 15px 10px;
+    font-size: 12px;
     text-transform: uppercase;
     border-bottom: 2px solid var(--primary-gold);
     white-space: nowrap;
@@ -136,7 +136,7 @@ th {
 
 td {
     padding: 12px 10px;
-    text-align: right;
+    text-align: center;
     border-bottom: 1px solid rgba(179, 139, 45, 0.1);
     font-size: 14px;
     font-weight: 500;
