@@ -134,9 +134,9 @@ th {
     text-align: center;
 }
 
-td {
+td{
     padding: 12px 10px;
-    text-align: center;
+    text-align: centre;
     border-bottom: 1px solid rgba(179, 139, 45, 0.1);
     font-size: 14px;
 }
