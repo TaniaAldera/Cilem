@@ -132,7 +132,6 @@ th {
     text-transform: uppercase;
     border-bottom: 2px solid var(--primary-gold);
     text-align: center;
-    white-space: nowrap;
 }
 
 td {
@@ -140,8 +139,6 @@ td {
     text-align: center;
     border-bottom: 1px solid rgba(179, 139, 45, 0.1);
     font-size: 14px;
-    font-weight: 500;
-    white-space: nowrap;
 }
 
 tr:nth-child(even) {
