@@ -131,6 +131,7 @@ th {
     font-size: 12px;
     text-transform: uppercase;
     border-bottom: 2px solid var(--primary-gold);
+    text-align: center;
     white-space: nowrap;
 }
 
